@@ -1,10 +1,11 @@
 from rest_framework import viewsets
-from .serializers import ProjectSerializer
+from .serializer import ProjectSerializer
 from .models import Project
 
-class ProjectViewSet(viewsets.ModelViewSet):
-    queryset = Project.objects.all()
+class ProjectList(viewsets.ModelViewSet):
     serializer_class = ProjectSerializer
+    queryset = Project.objects.all()
+
     # --- Cebo de diagnóstico ---
     def list(self, request, *args, **kwargs):
         print("--- Cebo activado: Solicitud GET recibida en el backend ---")
