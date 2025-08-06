@@ -27,8 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = False
 
 ALLOWED_HOSTS = ['core_api.onrender.com']
-
-
+ALLOWED_HOSTS = ['core-api-0zaj.onrender.com']
 # Application definition
 
 INSTALLED_APPS = [
