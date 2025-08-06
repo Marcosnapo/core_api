@@ -51,6 +51,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "https://core-api-frontend.onrender.com",
 ]
+CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = 'core_api.urls'
 
