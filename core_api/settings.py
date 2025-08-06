@@ -16,7 +16,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # Aquí se corrige la URL y se agrega el frontend para la compatibilidad con CORS.
 # Además, se agrega la URL de tu backend
@@ -48,6 +48,7 @@ MIDDLEWARE = [
 
 # Configuración de CORS para tu frontend
 # Reemplaza 'https://core-api-frontend.onrender.com' con tu URL real.
+CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS = [
     "https://core-api-frontend.onrender.com",
 ]
