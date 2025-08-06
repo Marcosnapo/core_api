@@ -48,7 +48,6 @@ MIDDLEWARE = [
 
 # Configuración de CORS para tu frontend
 # Reemplaza 'https://core-api-frontend.onrender.com' con tu URL real.
-CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS = [
     "https://core-api-frontend.onrender.com",
 ]
